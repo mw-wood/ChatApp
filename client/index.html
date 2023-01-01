@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title> ChatApp </title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+        <link rel="stylesheet" href="default.css">
+
+        <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+        <script defer src="client.js"></script>
+    </head>
+    <body>
+        <div class="chatbox">
+            <ul id="message-list">
+
+            </ul>
+
+            <div class="send">
+                <input class="input" id="text-input" placeholder="Message #chat">
+                <button class="button" id="send-button"> ➤ </button>
+            </div>
+
+            <!-- Lets user press enter to send message. -->
+            <script>
+                var input = document.getElementById("text-input");
+                input.addEventListener("keypress", function(event) {
+                  if (event.key === "Enter") {
+                    event.preventDefault();
+                    document.getElementById("send-button").click();
+                  }
+                });
+            </script>
+
+        </div>
+    </body>
+</html>

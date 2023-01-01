@@ -1,0 +1,85 @@
+:root {
+    --main-text-colour: #e7e7e7;
+    --main-textbox-colour: #4d4d4d;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2e2e2e;
+}
+
+.chatbox {
+    background-color: #3f3f3f;
+    border: 2px solid black;
+    color: var(--main-text-colour);
+    width: 600px;
+    height: 200px;
+    
+
+    resize: both;
+    overflow: auto;
+
+    position: relative;
+}
+
+ul {
+    height: 80%;
+    overflow-y: auto;
+    margin: auto;
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+::placeholder {
+    color: #b6b6b693;
+}
+
+.send {
+    width: calc(100% - 20px);;
+    background-color: var(--main-textbox-colour);
+    border: 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    padding-top:5px;
+    padding-bottom:5px;
+
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.input {
+    width: 90%;
+    color: var(--main-text-colour);
+    background-color: var(--main-textbox-colour);
+
+    border: none;
+    padding: none;
+    margin-left: 10px;
+
+    outline: none;
+}
+
+.button {
+    background-color: var(--main-text-colour);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    text-align: center; 
+    line-height: 26px;
+
+    border: none;
+    padding: none;
+    margin-left: 10px;
+}
