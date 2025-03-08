@@ -1,4 +1,4 @@
-const socket = io("ws://localhost:5256");
+const socket = io("ws://localhost:XXXX");
 
 const username = prompt("Enter display name.");
 socket.emit('new-user', username);
