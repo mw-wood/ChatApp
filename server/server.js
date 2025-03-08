@@ -35,4 +35,4 @@ function getCurrentTime()
     return new Date(Date.now()).toLocaleString('en-GB')
 }
 
-http.listen(5256, () => console.log(`[${getCurrentTime()}] <SERVER> Listening on http://localhost:5256.`))
+http.listen(5256, () => console.log(`[${getCurrentTime()}] <SERVER> Listening on http://localhost:XXXX.`))
